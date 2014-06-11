@@ -1,4 +1,9 @@
 # installed by npm install
-
 node_modules/
+
+# shippable artifacts
+shippable/
+
+# code coverage artifacts
+coverage/
 

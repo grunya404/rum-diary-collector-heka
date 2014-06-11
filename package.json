@@ -4,7 +4,10 @@
   "description": "A Heka Collector for rum-diary-js-client stats.",
   "main": "index.js",
   "scripts": {
-    "test": "jshint lib && mocha --recursive test"
+    "test": "npm run-script lint && npm run-script coverage && npm run-script shippable-report",
+    "lint": "./node_modules/.bin/jshint -c .jshintrc lib/ test/",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive test",
+    "shippable-report": "./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,8 @@
     "navigationTiming",
     "resourceTiming",
     "timing",
-    "events"
+    "events",
+    "heka"
   ],
   "author": "Shane Tomlinson <shane@shanetomlinson.com>",
   "license": "MPL2.0",
@@ -34,6 +38,7 @@
   },
   "devDependencies": {
     "chai": "1.9.1",
+    "istanbul": "0.2.11",
     "jshint": "2.5.1",
     "mocha": "1.20.1"
   }
