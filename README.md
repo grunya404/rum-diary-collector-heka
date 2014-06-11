@@ -1,6 +1,6 @@
 # rum-diary-collector-heka
 
-
+[![Build Status](https://api.shippable.com/projects/53987205679d7b4e0027f8e6/badge/master)](https://www.shippable.com/projects/53987205679d7b4e0027f8e6)
 
 [rum-diary-endpoint](https://github.com/shane-tomlinson/rum-diary-endpoint/) collector to send [rum-diary-js-client](https://github.com/shane-tomlinson/rum-diary-js-client) statistics to a Heka node.
 
