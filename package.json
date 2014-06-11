@@ -1,0 +1,40 @@
+{
+  "name": "rum-diary-collector-heka",
+  "version": "0.0.0",
+  "description": "A Heka Collector for rum-diary-js-client stats.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint lib && mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shane-tomlinson/rum-diary-collector-heka.git"
+  },
+  "keywords": [
+    "rum",
+    "rum-diary",
+    "statistics",
+    "metrics",
+    "endpoint",
+    "collector",
+    "performance",
+    "navigationTiming",
+    "resourceTiming",
+    "timing",
+    "events"
+  ],
+  "author": "Shane Tomlinson <shane@shanetomlinson.com>",
+  "license": "MPL2.0",
+  "bugs": {
+    "url": "https://github.com/shane-tomlinson/rum-diary-collector-heka/issues"
+  },
+  "homepage": "https://github.com/shane-tomlinson/rum-diary-collector-heka",
+  "dependencies": {
+    "heka-node": "0.5.0"
+  },
+  "devDependencies": {
+    "chai": "1.9.1",
+    "jshint": "2.5.1",
+    "mocha": "1.20.1"
+  }
+}
